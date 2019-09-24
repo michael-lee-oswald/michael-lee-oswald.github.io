@@ -32,14 +32,7 @@
     <link rel="manifest" href="/manifest.json">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- Favicon End -->
-    
-<!--
-    <style type="text/css">
-    html, body, div, p, h1, h2 {font-family: 'Roboto', sans-serif;} !important
-    </style>
--->
 
-    
 <!-- All in One SEO Pack 2.4.6.1 by Michael Torbert of Semper Fi Web Design[504,548] -->
 <meta name="description"  content="Use the grammar and spell check for free. Spelling and grammar software available online 24/7. Run spelling grammar check before the submission always." />
 
@@ -62,7 +55,9 @@
 <link rel='dns-prefetch' href='//cdn.prowritingaid.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel='stylesheet' id='style-page-grammar-checker-css'  href='style.css' type='text/css' media='all' />
-<script type='text/javascript' src='//cdn.prowritingaid.com/beyondgrammar/2.0.1843/dist/hayt/bundle.js?ver=4.9.8'></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
 <script src="main.js"></script>
     
@@ -159,7 +154,8 @@
     </div>
 </header>
 
-<!--MAIN-->
+<!--MAIN--> 
+    
 <div id="main" class="main">
 <section class="breadcrumbs">
     <div class="container">
@@ -174,24 +170,29 @@
         <div class="gc__wrap">
             <div class="gc__wrap_text">
                 <p class="gc__wrap_text_p">
-                    Если ничего не работает – вставь вот этот ключ во всплывающее окно
-    <br>
-    <br><big><big><b>0d9aeca196644d519b1e78e10123732f</b></big></big>
+                    Чтобы всё заработало – вставь вот этот ключ во всплывающее окно
+                    <br><big><big><b><div class="text-black">0d9aeca196644d519b1e78e10123732f</div></b></big></big>
     
                 </p>
             </div>
             <div class="gc__wrap_enter-text">Enter text</div>
             <form name="bing" onsubmit="return bingSpellCheck(this.query.value, getSubscriptionKey())">
 <!--    <input type="text" name="query" size="80" placeholder="Spell Check" autocomplete=off>-->
-                <textarea rows="4" cols="80" name="query" placeholder="Start typing" autocomplete=off>thes is a texst witw alot of misstakes</textarea>
+                <textarea rows="4" cols="60" name="query" placeholder="Start typing" autocomplete=off maxlength='100000' autofocus>plias fix ma teksts amd rigting</textarea>
+            <div id="the-count">
+                Считаем символы чтобы передавать параметром на страницу эдитинга: <span id="current">0</span>
+            </div>
+            
                 <br>
+            
                 <button type=submit class="btn btn-green gc_btn">FREE CHECK</button>
 </form>
+<br>
 <a target="_blank" href="https://grademiners.com/order?EssayForm[type_of_work]=19"><button class="btn btn-orange gc_btn">PRO CHECK</button></a>
             <br><br>
             <h2>Results</h2>
 <div id="results">
-<p>None yet.</p>
+    <p>None yet.</p>
 </div>
     <br><br><br>
 
@@ -268,6 +269,7 @@
     </div>
 </section>
 </div>
+    
 <footer class="footer">
         <div class="footer-top">
         <div class="container flex-container">
@@ -399,6 +401,20 @@
 </footer>
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=time()'></script>
 <script type='text/javascript' src='https://grademiners.com/wp-content/themes/grademiners.com/page-grammar-checker/js/scripts.min.js?ver=1569318007'></script>
-<script src="https://my.hellobar.com/d9c5720d3d0ea8a09c4fd87619a2a920c480552a.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script id="rendered-js">
+      $('textarea').keyup(function() {
+    
+  var characterCount = $(this).val().length,
+      current = $('#current'),
+      maximum = $('#maximum'),
+      theCount = $('#the-count');
+    
+  current.text(characterCount);
+      
+});
+</script>
+    
 </body>
 </html>

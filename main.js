@@ -71,7 +71,7 @@ function bingSpellCheck(query, key) {
     var endpoint = "https://api.cognitive.microsoft.com/bing/v7.0/spellcheck/";
 
     var request = new XMLHttpRequest();
-
+    
     try {
         request.open("GET", endpoint + "?mode=proof&mkt=en-US&text=" + encodeURIComponent(query));
     }
@@ -103,3 +103,4 @@ function bingSpellCheck(query, key) {
     request.send();
     return false;
 }
+
