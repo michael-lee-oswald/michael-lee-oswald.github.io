@@ -181,11 +181,8 @@
             
                 <button type=submit class="btn btn-green gc_btn">FREE CHECK</button>
 </form>
-<br>
-            
-<a target="_blank" href="https://grademiners.com/order?EssayForm[type_of_work]=19&EssayForm[number_page]=10"><button class="btn btn-orange gc_btn">PRO CHECK</button></a>
-            <br><br>
-<button class="btn btn-orange gc_btn" onclick="navigato()">Подсчёт символов и навигейт</button>       
+            <br>
+<button class="btn btn-orange gc_btn" onclick="navigato()">PRO CHECK</button>       
             
             <br><br>
             <h2>Results</h2>
@@ -333,18 +330,23 @@ $('textarea').keyup(function() {
   current.text(characterCount);
       
 });
+
+    function countCharacters() {
+        const characterCount = $('textarea').val().length;
+        console.log(characterCount);
+        return characterCount;
+    }
 </script>
     
-<!--
 <script>
     function navigato()
     {
-    window.location.href = 
-        `'https://grademiners.com/order?EssayForm[type_of_work]=19&EssayForm[number_page]=' + ${characterCount}`
+        window.open(`https://grademiners.com/order?EssayForm[type_of_work]=19&EssayForm[number_page]=${Math.ceil(countCharacters()/1300)}`, '_blank');
+//    window.location.href = 
+//        `https://grademiners.com/order?EssayForm[type_of_work]=19&EssayForm[number_page]=${Math.ceil(countCharacters()/3000)}`
     }
     
 </script>
--->
     
 </body>
 </html>
