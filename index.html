@@ -87,7 +87,7 @@
                 </a>
             </div>
             <div class="phone ">
-                <img src="bepis-29928799.png"
+                <img src="dog.jpeg"
                      alt="Grademiners.com"/>
             </div>
             
@@ -182,7 +182,11 @@
                 <button type=submit class="btn btn-green gc_btn">FREE CHECK</button>
 </form>
 <br>
-<a target="_blank" href="https://grademiners.com/order?EssayForm[type_of_work]=19"><button class="btn btn-orange gc_btn">PRO CHECK</button></a>
+            
+<a target="_blank" href="https://grademiners.com/order?EssayForm[type_of_work]=19&EssayForm[number_page]=10"><button class="btn btn-orange gc_btn">PRO CHECK</button></a>
+            <br><br>
+<button class="btn btn-orange gc_btn" onclick="navigato()">Подсчёт символов и навигейт</button>       
+            
             <br><br>
             <h2>Results</h2>
 <div id="results">
@@ -198,28 +202,6 @@
 <div class="slanting-bg slanting-bg_color_dark gc_slanting-bg"></div>
 
 
-<div class="order-banner">
-    <div class="container">
-                    <div class="order-banner-1 order-banner__wrap hiddenBanner">
-                <div class="order-banner_title">Found grammar errors?</div>
-                <div class="order-banner__content">
-                    <div class="order-banner_subtitle">Let us make sure your texts are 100% correct.</div>
-                    <a      onclick = "gtag('event', 'banner_click', {'event_label': 'grammar_check_proofreading', 'event_category': 'banners_experiment_grammar_check'});"
-                            href="https://grademiners.com/order?EssayForm[type_of_work]=28"
-                            class="order-banner_btn btn-blue">Order proofreading now</a>
-                </div>
-            </div>
-                    <div class="order-banner-2 order-banner__wrap hiddenBanner">
-                <div class="order-banner_title">Grammar looks good. What about research quality?</div>
-                <div class="order-banner__content">
-                    <div class="order-banner_subtitle">Let a PRO academic editor enhance your texts. </div>
-                    <a      onclick = "gtag('event', 'banner_click', {'event_label': 'grammar_check_editing', 'event_category': 'banners_experiment_grammar_check'});"
-                            href="https://grademiners.com/order?EssayForm[type_of_work]=19"
-                            class="order-banner_btn btn-blue">Order editing now</a>
-                </div>
-            </div>
-            </div>
-</div>
 </div>
     
 <footer class="footer">
@@ -314,25 +296,11 @@
 </ul>                </div>
                 <div class="footer-top__accept">
                     <div class="footer-top__subtitle">
-                        We accept:
+                        We accept you as you are
                     </div>
-                    <ul class="footer-top__cards">
-                        <li class="american-express">
-                            <img src="/wp-content/themes/grademiners.com/images/cards/american-express.png" alt="">
-                        </li>
-                        <li class="master-card">
-                            <img src="/wp-content/themes/grademiners.com/images/cards/master-card.png" alt="">
-                        </li>
-                        <li class="visa">
-                            <img src="/wp-content/themes/grademiners.com/images/cards/visa.png" alt="">
-                        </li>
-                        <li class="discover">
-                            <img src="/wp-content/themes/grademiners.com/images/cards/discover.png" alt="">
-                        </li>
-                    </ul>
                 </div>
                 <div class="footer-top__phone">
-                    <img src="/wp-content/themes/grademiners.com/images/phone/phone-ftr.png"
+                    <img src="rabbit1.jpg"
                          alt="Grademiners.com"/>
                 </div>
                 <div class="footer-copyright__rights">
@@ -353,10 +321,9 @@
 </footer>
 <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=time()'></script>
 <script type='text/javascript' src='https://grademiners.com/wp-content/themes/grademiners.com/page-grammar-checker/js/scripts.min.js?ver=1569318007'></script>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script id="rendered-js">
-      $('textarea').keyup(function() {
+    
+<script>
+$('textarea').keyup(function() {
     
   var characterCount = $(this).val().length,
       current = $('#current'),
@@ -367,6 +334,17 @@
       
 });
 </script>
+    
+<!--
+<script>
+    function navigato()
+    {
+    window.location.href = 
+        `'https://grademiners.com/order?EssayForm[type_of_work]=19&EssayForm[number_page]=' + ${characterCount}`
+    }
+    
+</script>
+-->
     
 </body>
 </html>
