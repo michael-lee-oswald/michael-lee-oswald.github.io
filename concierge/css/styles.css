@@ -1791,7 +1791,7 @@ a:hover.back-to-top {
 	}
 
 	.header .text-container {
-		margin-top: 6.5rem;
+		margin-top: 3rem;
 	}
 	/* end of header */
 
@@ -1899,7 +1899,7 @@ a:hover.back-to-top {
 
 	.basic-4 .text-container {
 		margin-top: 7rem;
-		margin-bottom: 0;
+		margin-bottom: 7rem;
 		text-align: left;
 	}
 	/* end of download */
@@ -1965,7 +1965,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .text-container {
-		margin-top: 7.5rem;
+		margin-top: 5rem;
 		margin-left: 2.5rem;
 	}
 
