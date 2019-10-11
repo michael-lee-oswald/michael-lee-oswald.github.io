@@ -73,9 +73,13 @@ border-radius: 3px;
 
 .fb-btn {
     background-color:#0084ff;
+    border: solid #0084ff;
+	border-radius: 2rem;
     
 }
 .fb-btn:hover {
     background-color:white;
-    color:#0084ff;   
+    color:#0084ff;
+    border: 0.125rem solid #0084ff;
+	border-radius: 2rem;
 }
