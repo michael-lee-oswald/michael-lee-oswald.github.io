@@ -96,7 +96,10 @@ border-radius: 3px;
 
 .cta-back {
     background-image: linear-gradient(to right bottom, #613f92, #595bad, #4f75c5, #458fd8, #43a8e8);
-    padding-bottom: 8em ;
-    padding-top: 8em;
+    padding-bottom: 4em ;
+    padding-top: 4em;
 }
 
+.img-smol {
+    max-width: 70%;
+}
