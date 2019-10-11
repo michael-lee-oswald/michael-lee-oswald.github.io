@@ -73,13 +73,14 @@ border-radius: 3px;
 
 /*accordion ends here*/
 
-.fb-btn {
+.fb-btn:hover {
     background-color:#0084ff;
     border: solid #0084ff;
 	border-radius: 2rem;
+    color: white;
     
 }
-.fb-btn:hover {
+.fb-btn {
     background-color:white;
     color:#0084ff;
     border: 0.125rem solid #0084ff;
