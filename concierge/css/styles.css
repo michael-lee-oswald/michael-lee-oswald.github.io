@@ -767,7 +767,7 @@ input[type='checkbox'] {
 }
 
 .header .header-content {
-	padding-top: 8.5rem;
+	padding-top: 6rem;
 	padding-bottom: 7rem;
 	text-align: center;
 }
@@ -1614,7 +1614,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 11rem;
+		padding-top: 8rem;
 	}
 	/* end of header */
 
@@ -1787,7 +1787,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header .header-content {
-		padding-top: 13rem;
+		padding-top: 8rem;
 		padding-bottom: 10rem;
 		text-align: left;
 	}
