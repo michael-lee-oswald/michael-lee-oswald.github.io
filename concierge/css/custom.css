@@ -88,6 +88,15 @@ border-radius: 3px;
 
 /*facebook button ends here*/
 
-.cta-back {
+.faq-back {
     background-image: linear-gradient(to right bottom, #461292, #42309e, #4246a8, #4659b0, #506bb5, #5476bc, #5981c2, #608cc7, #5b93d1, #559bdb, #4ca2e5, #40aaee);
+    padding-bottom: 4em ;
+    padding-top: 4em;
 }
+
+.cta-back {
+    background-image: linear-gradient(to right bottom, #613f92, #595bad, #4f75c5, #458fd8, #43a8e8);
+    padding-bottom: 8em ;
+    padding-top: 8em;
+}
+
