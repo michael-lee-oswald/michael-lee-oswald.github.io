@@ -104,3 +104,11 @@ border-radius: 3px;
 .img-smol {
     max-width: 70%;
 }
+
+.trans-back {
+    background-color: transparent;
+}
+
+.minhi {
+    min-height: 80vh;
+}
