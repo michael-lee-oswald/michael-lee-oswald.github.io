@@ -114,28 +114,30 @@ border-radius: 3px;
 }
 
 .card-back-1 {
-    background-image: linear-gradient(to right bottom, #461292, #42309e, #4246a8, #4659b0, #506bb5);
+    background-image: linear-gradient(to right bottom, #461292, #42309e, #4246a8, #4659b0, #506bb5, #5476bc, #5981c2);
     padding-bottom: 4em ;
     padding-top: 4em;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: opacity .2s ease-in-out;
 }
 
 .card-back-1:hover {
     opacity: 1;
+    background-image: linear-gradient(to right bottom, #42309e, #4246a8, #4659b0, #506bb5, #5476bc, #5981c2);
     transition: opacity .2s ease-in-out;
 }
 
 .card-back-2 {
-    background-image: linear-gradient(to right bottom, #5476bc, #5981c2, #608cc7, #5b93d1, #559bdb);
+    background-image: linear-gradient(to right bottom, #506bb5, #5476bc, #5981c2, #608cc7, #5b93d1, #559bdb, #4ca2e5, #40aaee);
     padding-bottom: 4em ;
     padding-top: 4em;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: opacity .2s ease-in-out;
 }
 
 .card-back-2:hover {
     opacity: 1;
+    background-image: linear-gradient(to right bottom, #5476bc, #5981c2, #608cc7, #5b93d1, #559bdb, #4ca2e5, #40aaee);
     transition: opacity .2s ease-in-out;
 }
 
