@@ -112,3 +112,41 @@ border-radius: 3px;
 .minhi {
     min-height: 80vh;
 }
+
+.card-back-1 {
+    background-image: linear-gradient(to right bottom, #461292, #42309e, #4246a8, #4659b0, #506bb5);
+    padding-bottom: 4em ;
+    padding-top: 4em;
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+.card-back-1:hover {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.card-back-2 {
+    background-image: linear-gradient(to right bottom, #5476bc, #5981c2, #608cc7, #5b93d1, #559bdb);
+    padding-bottom: 4em ;
+    padding-top: 4em;
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+.card-back-2:hover {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+.oopacity {
+    opacity: 0.7;
+    transition: opacity .2s ease-in-out;
+    transition: transform .2s;
+}
+.oopacity:hover {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    transition: transform .2s;
+    transform: scale(1.1);
+}
