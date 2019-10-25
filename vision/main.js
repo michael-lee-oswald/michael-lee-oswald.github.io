@@ -67,6 +67,7 @@ function sendFileToCloudVision (content) {
     data: JSON.stringify(request),
     contentType: 'application/json'
   }).fail(function (jqXHR, textStatus, errorThrown) {
+    console.log(jqXHR, textStatus, errorThrown);
     $('#results').text('ERRORS: ' + textStatus + ' ' + errorThrown);
   }).done(displayJSON);
 }
