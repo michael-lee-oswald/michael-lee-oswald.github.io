@@ -40,6 +40,12 @@
     })(window,document,'script','dataLayer','GTM-KVTRFL4');</script>
     <!-- End Google Tag Manager -->
     
+    <script>
+      UPLOADCARE_PUBLIC_KEY = '6ead0bcab931816f34f2';
+    </script>
+
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+    
     
 </head>
     
@@ -111,8 +117,21 @@
                             <h1>SPEND LESS TIME STUDYING</h1>
 <!--                            <h1>GET 80% OF STUDY MATERIAL IN 20% TIME</h1>-->
                             <p class="p-large">Summarizr highlights key takeaways from your study materials.<br>Spend 20% time for 80% results, it's that easy!</p>
-                            <a class="btn-outline-lg page-scroll mx-2 my-2" href="#how" style="font-size: large">Learn more</a>
-                            <a class="btn-solid-lg page-scroll mx-2 my-2" href="#cta" style="font-size: large">Get Started</a>
+<!--                            <a class="btn-outline-lg page-scroll mx-2 my-2" href="#how" style="font-size: large">LEARN MORE</a>-->
+<!--                            <a class="btn-solid-lg page-scroll mx-2 my-2" href="" style="font-size: large">Get Started</a>-->
+                            <div class="mt-3">Or start summarizing now:    
+                            <input type="hidden"
+                                   role="uploadcare-uploader" />
+                            <form action="https://formspree.io/michaellee2153@gmail.com" method="POST">
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control-input" id="cemail" name="_replyto" required>
+                                    <label class="label-control" for="cemail">Email for results</label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" value="Send" class="form-control-submit-button" style="font-size: large">SUBMIT</button>
+                                </div>
+                            </form>
+                            </div>
                         </div>
                     </div> <!-- end of col -->
                     <div class="col-lg-6 text-center">
@@ -393,19 +412,24 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-4 col-xl-4 offset-4 align-items-center my-auto">
+                    
+<!--
+                    <form method="POST" enctype="multipart/form-data"
+                          action="https://upload.uploadcare.com/submit/">
+                      <input type="hidden" name="UPLOADCARE_PUB_KEY" value="demopublickey">
+                      <input type="hidden" name="UPLOADCARE_ACTION" value="https://my-app.com/my-form-handler/">
+                      <input type="file" name="my-file" class="form-control-submit-button">
+                        <button type="submit" class="form-control-submit-button mt-3">SUMMARIZE</button>
+                    </form>
+-->
+                    
                     <form action="https://formspree.io/michaellee2153@gmail.com" method="POST">
                         <div class="form-group">
                             <input type="email" class="form-control-input" id="cemail" name="_replyto" required>
                             <label class="label-control" for="cemail">Your Email</label>
                         </div>
-<!--
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" name="name" required></textarea>
-                            <label class="label-control" for="cmessage">What you need summarized</label>
-                        </div>
--->
-                        <div class="form-group">
-                            <button type="submit" value="Send" class="form-control-submit-button">GET STARTED</button>
+                            <button type="submit" value="Send" class="form-control-submit-button">SUBMIT</button>
                         </div>
                     </form>
                 </div>
